@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrando JSX con React</title>
+</head>
+<body>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        
+        /* const divEl = (
+            <div>
+                <p key={1}> Soy un párrafo </p>
+                <p key={2}> Soy otro párrafo </p>
+            </div>
+        ); */
+
+        /* const p1 = <p key={1}> Soy un párrafo </p>;
+        const p2 = <p key={2}> Soy otro párrafo </p>;
+
+        const divEl = (
+            <div>
+                {p1}
+                {p2}
+            </div>
+        ); */
+
+        const h_1 = <h1 key={1}>Listado</h1>;
+
+        const liUno = <li key={1}> Soy  </li>;
+        const liDos = <li key={2}> una </li>;
+        const liTres = <li key={3}> lista </li>;
+
+        const ulOne = (
+            <ul>
+                {liUno}
+                {liDos}
+                {liTres}
+            </ul>
+        );
+
+        const divEl = (
+            <div>
+                {h_1}
+                {ulOne}
+            </div>
+        );
+
+        ReactDOM.render(divEl, document.getElementById("root"));
+    </script>
+</body>
+</html>
