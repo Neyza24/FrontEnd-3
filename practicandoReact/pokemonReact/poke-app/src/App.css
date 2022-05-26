@@ -19,12 +19,27 @@ body{
 .button{
   padding: 12px 32px;
   border-radius: 6px;
-  background-color: rgb(26, 60, 250);
+  
   border-style: none;
-  color:#eeeeee;
+  color:#ececec;
   font-weight: 600;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  
+}
+
+.btnFire{
+  background-color: #ff6720;
+}
+
+.btnWater{
+  background-color: #6574ff;
+}
+
+.btnRock{
+  background-color: #242424;
+}
+
+.btnElectric{
+  background-color: #d8b000;
 }
 
 .title{

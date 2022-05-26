@@ -6,7 +6,7 @@ import React, { Fragment } from "react";
 const PokemonWater = ({ tipo }) => {
 
   React.useEffect(() => {
-    document.body.style.background = '#00dbc0';
+    document.body.style.background = '#89ddff';
   }, [])
 
   const { water } = pokemonData;
