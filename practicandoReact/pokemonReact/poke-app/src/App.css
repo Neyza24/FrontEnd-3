@@ -13,7 +13,7 @@ body{
   justify-content: center;
   gap: 40px;
   padding: 32px 0;
-
+  margin-bottom: 80px;
 }
 
 .button{
@@ -21,26 +21,30 @@ body{
   border-radius: 6px;
   background-color: rgb(26, 60, 250);
   border-style: none;
-  color:rgb(217, 242, 255);
+  color:#eeeeee;
   font-weight: 600;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   
+}
+
+.title{
+  color: rgb(102, 117, 255);
+  text-align: center;
 }
 
 .container{
   display: flex;
-  
-  margin: 120px 0 0 40px;
-  width: 260px;
-  border-radius: 40px;
-  gap: 60px;
+  justify-content: space-around;
 }
 
 
 .card{
   display: flex;
   flex-direction: column;
-  
   align-items: center;
+  background-color: rgba(124, 148, 255, 0.801);
+  border-radius: 12px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .avatar{

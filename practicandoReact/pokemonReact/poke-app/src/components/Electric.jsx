@@ -1,18 +1,23 @@
 import Card from "./Card";
-import React from "react";
+import { pokemonData } from "../data/data";
+import React, { Fragment } from "react";
 
-const PokemonElectric = ({tipo}) => {
-  React.useEffect(()=> {
-  
+const PokemonElectric = () => {
+  React.useEffect(() => {
     document.body.style.background = '#e6e200';
-}, [])
+  }, []);
 
+  const { electric } = pokemonData;
 
   return (
-    <Card 
-        tipo = {tipo}
-      />
-  )
+    <Fragment>
+      {
+        electric.map(pokemon =>
+          <Card key={pokemon.id} name={pokemon.pokemonName} avatar={pokemon.avatar} />
+        )
+      }
+    </Fragment>
+  );
 }
 
 export default PokemonElectric;

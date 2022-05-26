@@ -1,16 +1,24 @@
 import Card from "./Card";
-import React from "react";
+import { pokemonData } from "../data/data";
+import React, { Fragment } from "react";
 
-const PokemonFire = ({tipo}) => {
+const PokemonFire = () => {
 
-  React.useEffect(()=> {
-    document.body.style.background = '#e49504';
-}, [])
+  React.useEffect(() => {
+    document.body.style.background = '#ff844b';
+  }, [])
+
+  const { fire } = pokemonData;
+
   return (
-    <Card
-        tipo = {tipo}
-      />
-  )
+    <Fragment>
+      {
+        fire.map(pokemon =>
+          <Card key={pokemon.id} name={pokemon.pokemonName} avatar={pokemon.avatar} />
+        )
+      }
+    </Fragment>
+  );
 }
 
 export default PokemonFire;

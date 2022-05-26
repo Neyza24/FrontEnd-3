@@ -1,17 +1,24 @@
 import Card from "./Card";
-import React from "react";
+import { pokemonData } from "../data/data";
+import React, { Fragment } from "react";
 
-const PokemonRock = ({tipo}) => {
+const PokemonRock = () => {
 
-  React.useEffect(()=> {
-    document.body.style.background = '#b4e600';
-}, [])
+  React.useEffect(() => {
+    document.body.style.background = '#333333';
+  }, [])
+
+  const { rock } = pokemonData;
 
   return (
-    <Card
-        tipo = {tipo}
-      />
-  )
+    <Fragment>
+      {
+        rock.map(pokemon =>
+          <Card key={pokemon.id} name={pokemon.pokemonName} avatar={pokemon.avatar} />
+        )
+      }
+    </Fragment>
+  );
 }
 
 export default PokemonRock;

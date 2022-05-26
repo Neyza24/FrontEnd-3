@@ -1,21 +1,12 @@
 
-import React, {Fragment} from "react";
+const Card = ({ name, avatar }) => {
 
-
-const Card = ({tipo}) => {
-    
     return (
-      <Fragment >
-          {
-              tipo.map(property => 
-              <div  className="card">
-                  <h2 > N°{property.id} {property.pokemonName}</h2>
-                  <img className="avatar" id={property.id} src={property.avatar} alt={property.pokemonName} />
-              </div>
-              )
-          }
-      </Fragment>
+        <div className="card">
+            <h3>{name}</h3>
+            <img className="avatar" src={avatar} alt={name} />
+        </div>
     )
-  }
-  
-  export default Card;
+}
+
+export default Card;
