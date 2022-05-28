@@ -1,13 +1,11 @@
 
-
 import Navigation from './components/Navigation';
-import PokemonRock from './components/Rock';
-import PokemonWater from './components/Water'
-import PokemonFire from './components/Fire';
-import PokemonElectric from './components/Electric';
-import Title from './components/Title';
+import PokemonCard from './components/PokemonCard';
+import { pokemonData } from "./data/data";
 import React, { useState } from 'react';
-import './App.css';
+import './css/Header.css';
+import './css/App.css';
+
 
 
 
@@ -16,35 +14,39 @@ function App() {
 
   const [state, setState] = useState();
 
+//Utilizando js para cambiar poke desde los cta
+const arrOfKey = Object.keys(pokemonData);
+console.log(arrOfKey);
+
+
   const ChangeCard = (valor) => {
-    if (valor === 1) {
-      setState(<PokemonFire
-      />)
+    if (valor === 0) {
+      setState(<PokemonCard type={arrOfKey[valor]} element={pokemonData.fire}/>)
+    } else if (valor === 1) {
+      setState(<PokemonCard type={arrOfKey[valor]} element={pokemonData.water}/>)
     } else if (valor === 2) {
-      setState(<PokemonWater
-      />)
+      setState(<PokemonCard type={arrOfKey[valor]} element={pokemonData.rock}/>)
     } else if (valor === 3) {
-      setState(<PokemonRock
-      />)
-    } else if (valor === 4) {
-      setState(<PokemonElectric
-      />)
+      setState(<PokemonCard type={arrOfKey[valor]} element={pokemonData.electric}/>)
     }
   }
 
   return (
-    
-    
-    <div className='ContainerApp'>
-      <Title/>
-      <Navigation
-        ChangeState={ChangeCard}
-      />
-      <div className='container'>
+    <div className='body'>
+      <header className="containerHeader">
         {
-          state
-        }
-      </div>
+          arrOfKey.map((type, index) => 
+            <Navigation
+              ChangePokemon={ChangeCard}
+              type={type}
+              idx={index}
+            />
+          ) 
+          }
+      </header>
+      {
+        state
+      }
 
     </div>
   );

@@ -1,14 +1,17 @@
+import '../css/Header.css';
 
-const Navigation =({ChangeState})=>{
 
-
+const Navigation =({ChangePokemon, type, idx})=>{
+    const objBg = {
+        fire: "#EB5353",
+        water: "#187498",
+        rock: "#334443",
+        electric: "#F1FA3C"
+    }
 
     return(
-        <nav className="navigation">
-            <button onClick={()=>ChangeState(1)} className="button btnFire">Poke Fire</button>
-            <button onClick={()=>ChangeState(2)} className="button btnWater">Poke Water</button>
-            <button onClick={()=>ChangeState(3)} className="button btnRock">Poke Rock</button>
-            <button onClick={()=>ChangeState(4)} className="button btnElectric">Poke Electric</button>
+        <nav>
+            <button className="button" onClick={()=>ChangePokemon(idx)} style={{backgroundColor: objBg[type]}} >Pokemon {type}</button>
         </nav>
     )
 }

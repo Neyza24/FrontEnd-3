@@ -1,0 +1,16 @@
+.containerHeader{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 32px 0;
+    
+}
+
+.button{
+    padding: 12px 32px;
+    border-radius: 6px;
+    border-style: none;
+    color:#aaaaaa;
+    font-weight: 600;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
