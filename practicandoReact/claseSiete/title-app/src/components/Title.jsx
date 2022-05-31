@@ -7,7 +7,7 @@ const Title =()=>{
     return(
         <section className={containerStyles.container}>
             {
-                arrayTitle.map(item => <div className={titleStyles.titleStyles}>{item}</div>)
+                arrayTitle.map(item => <h1 className={titleStyles.titleStyles}>{item}</h1>)
             }
         </section>
     )
