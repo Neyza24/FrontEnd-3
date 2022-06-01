@@ -1,0 +1,97 @@
+body {
+  background-color: #353535;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  padding-top: 12%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.panel {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+  gap: 20px;
+}
+
+.RED {
+  width: 25%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  background-color: red;
+}
+.BLUE {
+  width: 25%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  background-color: rgb(11, 56, 255);
+}
+
+.YELLOW {
+  width: 25%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  background-color: yellow;
+}
+
+.GREEN {
+  width: 25%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  background-color: green;
+}
+.LIME {
+  width: 25%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  background-color: LIME;
+}
+.ORANGE {
+  width: 25%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  background-color: ORANGE;
+}
+.BROWN {
+  width: 25%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  background-color: BROWN;
+}
+.MAGENTA {
+  width: 25%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  background-color: MAGENTA;
+}
+
+.PURPLE {
+  width: 25%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  background-color: #6000dd;
+}
