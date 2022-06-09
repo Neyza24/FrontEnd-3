@@ -24,3 +24,15 @@ yarn-error.log*
 
 practicandoReact/claseSiete/node_modules
 practicandoReact/claseSiete/package-lock.json
+
+practicandoReact/claseOcho/node_modules
+practicandoReact/claseOcho/package-lock.json
+practicandoReact/claseOcho/package.json
+
+practicandoReact/claseNueve/node_modules
+practicandoReact/claseNueve/package-lock.json
+practicandoReact/claseNueve/package.json
+
+practicandoReact/claseDiez/node_modules
+practicandoReact/claseDiez/package-lock.json
+practicandoReact/claseDiez/package.json
